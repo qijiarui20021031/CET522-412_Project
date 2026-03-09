@@ -1,8 +1,8 @@
+numpy<2
 pandas
-numpy
-wandb
 scikit-learn
 joblib
 streamlit
 pydeck
 plotly
+wandb
