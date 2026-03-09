@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Wandb (training runs)
+wandb/
+
+# GeoLife raw data (large, non-redistributable)
+GeoLifetrajectorydata*/
+Geolife*/
+*Trajectories*1.3*/
+
+# IDE / OS
+.DS_Store
+.idea/
+*.swp
+*.swo
+
+# Optional: uncomment if DB or model files are large
+# data/*.db
+# models/*.joblib
+data/*.db
+data/*.db
+data/*.sqlite

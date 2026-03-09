@@ -1,0 +1,80 @@
+{
+  "db": "/Users/qijiarui/Desktop/uw cee/cet522/project/geolife_mode_app/data/geolife.sqlite",
+  "n_segments": 16348,
+  "n_users": 60,
+  "split": {
+    "test_size": 0.25,
+    "seed": 42
+  },
+  "labels": [
+    "bike",
+    "bus",
+    "car",
+    "walk"
+  ],
+  "confusion_matrix": [
+    [
+      146,
+      42,
+      12,
+      58
+    ],
+    [
+      5,
+      396,
+      99,
+      26
+    ],
+    [
+      16,
+      704,
+      691,
+      30
+    ],
+    [
+      46,
+      32,
+      12,
+      1237
+    ]
+  ],
+  "classification_report": {
+    "bike": {
+      "precision": 0.6854460093896714,
+      "recall": 0.5658914728682171,
+      "f1-score": 0.6199575371549894,
+      "support": 258.0
+    },
+    "bus": {
+      "precision": 0.3373083475298126,
+      "recall": 0.752851711026616,
+      "f1-score": 0.46588235294117647,
+      "support": 526.0
+    },
+    "car": {
+      "precision": 0.8488943488943489,
+      "recall": 0.47952810548230396,
+      "f1-score": 0.6128603104212861,
+      "support": 1441.0
+    },
+    "walk": {
+      "precision": 0.9156180606957809,
+      "recall": 0.9321778447626224,
+      "f1-score": 0.9238237490664675,
+      "support": 1327.0
+    },
+    "accuracy": 0.6953828828828829,
+    "macro avg": {
+      "precision": 0.6968166916274035,
+      "recall": 0.6826122835349399,
+      "f1-score": 0.6556309873959799,
+      "support": 3552.0
+    },
+    "weighted avg": {
+      "precision": 0.7861912118590301,
+      "recall": 0.6953828828828829,
+      "f1-score": 0.7077840609688405,
+      "support": 3552.0
+    }
+  }
+}
