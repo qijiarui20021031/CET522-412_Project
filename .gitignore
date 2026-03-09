@@ -26,9 +26,6 @@ Geolife*/
 *.swp
 *.swo
 
-# Optional: uncomment if DB or model files are large
-# data/*.db
-# models/*.joblib
-data/*.db
+# Generated DB and model (large files)
 data/*.db
 data/*.sqlite

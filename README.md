@@ -21,7 +21,8 @@ with transportation–mode labels for a subset of users. The pipeline covers:
   - `app.py`: Streamlit application entry point.
 - `src/`: shared utilities for parsing GeoLife data, feature engineering,
   and SQLite helpers.
-- `data/`: generated SQLite database (default location).
+- `data/`: put **Geolife Trajectories 1.3** here (download separately).  
+  `build_db.py` generates `geolife.sqlite` in this folder.
 - `models/`: trained model and metrics files.
 
 ## Quick start
@@ -34,7 +35,9 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-2) Download **GeoLife Trajectories 1.3** from the [official site](https://www.microsoft.com/en-us/download/details.aspx?id=52367), then set `DEFAULT_GEOLIFE_ROOT` in `src/constants.py` to your data folder.
+2) Download **GeoLife Trajectories 1.3** from the [official site](https://www.microsoft.com/en-us/download/details.aspx?id=52367).  
+   - Extract the folder and put it inside `data/` so you have: `data/Geolife Trajectories 1.3/`  
+   - Or place it elsewhere and set `DEFAULT_GEOLIFE_ROOT` in `src/constants.py` to that path.
 
 3) Build the database (uses only users that have a `labels.txt` file):
 
