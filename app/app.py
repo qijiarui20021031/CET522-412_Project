@@ -72,6 +72,14 @@ def page_data_and_db(db_path: Path) -> None:
     st.header("Data and data management (SQLite)")
     st.write(f"Current database path: `{db_path}`")
 
+    st.subheader("Data limitations")
+    st.write(
+        "- **Labeled users only**: We use only users who have a `labels.txt` file; unlabeled users are excluded.\n"
+        "- **Mode mapping**: Taxi is mapped to car; only four modes are retained: walk, bike, bus, car.\n"
+        "- **Sampling**: GeoLife uses irregular GPS sampling; we downsample points for visualization.\n"
+        "- **Geographic scope**: Data is from Beijing and surrounding areas; results may not generalize to other regions."
+    )
+
     counts = {
         "users": "SELECT COUNT(*) AS n FROM users",
         "label_intervals": "SELECT COUNT(*) AS n FROM label_intervals",
